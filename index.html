@@ -7,32 +7,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="form">
-        <div action="" class="userform">
-            <h2>sign up Form</h2>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name">
-                <p id="nameerror"></p>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email">
-                <p id="emailerror"></p>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Type your password">
-            </div>
+
+    <div class="container">
+        <div class="form">
+            <div action="" class="userform">
+                <h2>sign up Form</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                    <p id="nameerror"></p>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                    <p id="emailerror"></p>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Type your password">
+                    <p id="passwordError"></p>
+                </div>
+        
+                <button onclick="addData()">signup</button>
     
-            <button onclick="addData()">signup</button>
-
-
-            <div class="showdiv">
-                <p id="show"></p>
+    
+                <div class="showdiv">
+                    <p id="show"></p>
+                </div>
             </div>
         </div>
+        <div class="form loginform">
+            <div action="" class="userform">
+                <h2>login  Form</h2>
+               
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="useremail" name="email" placeholder="Your email">
+                    <p id="emailerror"></p>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="userpassword" name="password" placeholder="Type your password">
+                </div>
+        
+                <button onclick="submitData()">login</button>
+              
+        
+                <div class="showinfo">
+                    <p id="showData"></p>
+                </div>
+            </div>
+        </div>
+
     </div>
+    
 
     <script src="js/main.js"></script>
 </body>
