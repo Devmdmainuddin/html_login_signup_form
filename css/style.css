@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box,
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -59,7 +62,8 @@ input {
     border: 1px solid #ccc;
     outline: none;
     transition: all 0.4s ;
-
+width: 100%;
+z-index:0;
 
 }
 input:hover{
@@ -83,10 +87,26 @@ button{
 }
 
 
-
-
-
-
+.fields{
+    display: flex;
+    position: relative;
+}
+.togglediv{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top:8px;
+    right:9px;
+    background:url('../images/view.png');
+    background-size: cover;
+    background-position: center;
+    color:rgb(255, 17, 0);
+    z-index: 1111;
+}
+.hide{
+    background:url('../images/hide.png');
+    background-size: cover;
+}
 
 
 
